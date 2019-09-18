@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+
+  background-color: #171717;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+li {
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+
+
+/* Container
+===================*/
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+
+/* Title
+===================*/
+.title {
+  margin-bottom: 30px;
+
+  color: #67e0e1;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  text-indent: 4.8px;
+}
+
+
+/* btn
+===================*/
+.btn {
+  font: 300 16px/1 'Poppins', sans-serif;
+  color: #67e0e1;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  text-indent: 2.8px;
+
+  border: none;
+  background: transparent;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+
+/* Header
+===================*/
+.header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__title {
+    font-size: 12px;
+    color: #67e0e1;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    text-indent: 10.7px;
+
+    span {
+      display: block;
+      padding-bottom: 36px;
+
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 10.7px;
+      text-indent: 10.7px;
+
+      border-bottom: 1px solid #333;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+
+      width: 63px;
+      height: 6px;
+      background-color: #67e0e1;
+    }
+  }
+}
+
+
+/* Contact
+===================*/
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #202020;
+
+  &__input {
+    display: block;
+    width: 280px;
+    margin: 0 auto 25px;
+    padding: 15px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #fff;
+
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+}
+
+
+/* Phonebook
+===================*/
+.phonebook {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
